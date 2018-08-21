@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cloud Detector</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/4.8.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/4.8.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/4.8.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/4.8.1/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/4.8.1/firebase-storage.js"></script>
+    <script defer src="/__/firebase/4.8.1/firebase-firestore.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-firestore.js"></script> -->
+    <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-light_blue.min.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  </head>
+  <body>
+      <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+          <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+              <i class="material-icons">cloud_queue</i>
+              <span class="mdl-layout-title">Cloud Detector</span>
+              <div class="mdl-layout-spacer"></div>
+              <nav class="mdl-navigation upload-btn">
+                  <input type="file" id="cloud-upload" multiple accept="image/*" style="display:none"/>
+                  <a class="mdl-navigation__link" id="file-select">Upload a cloud photo</a>
+              </nav>
+            </div>
+          </header>
+          <main class="mdl-layout__content">
+              <div class="mdl-grid">
+                  <div class="mdl-cell mdl-cell--12-col">
+                    <div id="progress-bar" class="mdl-progress mdl-js-progress"></div>
+                    <p id="status"></p>
+                  </div>
+              </div>
+              
+              <div class="mdl-grid">
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-cell mdl-cell--5-col">
+                    <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="card">
+                        <div class="mdl-card__title" id="img-predicted">
+                        </div>
+                        <div class="mdl-card__supporting-text" id="prediction-text">
+                        </div>
+                        <div class="mdl-card__actions mdl-card--border" id="weather-summary">
+                        </div>
+         
+                      </div>
+                </div>
+                <div class="mdl-layout-spacer"></div>
+              </div>
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              
+          </main>
+        </div>
+    <script src="main.js"></script>
+  </body>
+</html>
