@@ -1,6 +1,8 @@
+**This is not an official Google product**
+
 # Demo: querying a custom AutoML model from a web app
 
-This demo shows how to call a custom AutoML model from a web app using the [AutoML API](https://cloud.google.com/vision/automl/docs/reference/rest/). It queries an AutoML Vision model, but the code can easily be adapted for AutoML Natural Language since the API is the same for both. The model I'm using for this predicts the type of cloud in an image:
+This demo shows how to call a custom AutoML model from a web app using the [AutoML API](https://cloud.google.com/vision/automl/docs/reference/rest/). It queries an [AutoML Vision](https://cloud.google.com/vision/automl/docs/) model, but the code can easily be adapted for [AutoML Natural Language](https://cloud.google.com/natural-language/automl/docs/) since the API is the same for both. The model I'm using for this predicts the type of cloud in an image:
 
 ![Demo gif](screenshots/cloud-demo.gif)
 
