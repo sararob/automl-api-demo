@@ -92,7 +92,7 @@ $(document).ready(() => {
                         let cloudData = doc.data();
                         updateProgressBar('hide');
                         if (cloudData.predictionErr) {
-                            $('#status').text(cloudData.predictionErr + " :(");
+                            $('#status').text(`${cloudData.predictionErr} :(`);
                         } else {
                             displayPrediction(cloudData);
                             displayImage(localFile);
