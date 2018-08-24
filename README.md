@@ -12,7 +12,7 @@ This demo shows how to call a custom AutoML model from a web app using the [Auto
 
 * You've built and trained a model with [Cloud AutoML](http://cloud.google.com/automl). 
 * You've enabled the AutoML API in your Cloud project
-* You've created a project in the Firebase console and associated it with the same project where you trained your AutoML model. Using the [Firebase CLI](https://firebase.google.com/docs/cli/), make sure to initialize your project with Functions, Firestore, and Hosting:
+* You've created a project in the Firebase console and associated it with the same project where you trained your AutoML model. Using the [Firebase CLI](https://firebase.google.com/docs/cli/), make sure to initialize your project with Firestore, Functions, Hosting, and Storage:
 
 ![Firebase CLI](screenshots/firebase-cli.png)
 
