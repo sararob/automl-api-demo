@@ -13,8 +13,8 @@
 // limitations under the License.
 
 // Replace the strings below with your own project & model info
-const project = 'YOUR_PROJECT_NAME';
-const region = 'YOUR_PROJECT_REGION';
+const project = 'mglish-autoML';
+const region = 'us-central';
 const automl_model = 'YOUR_AUTOML_MODEL_ID';
 
 const sizeOf = require('image-size');
