@@ -18,7 +18,7 @@ This demo shows how to call a custom AutoML model from a web app using the [Auto
 
 ## Deploying the function
 
-The `functions/index.js` file includes the functions code to call the custom AutoML model. 
+From within the `functions/` directory, run `npm install` to install the Node packages listed in `functions/package.json`. The `functions/index.js` file includes the functions code to call the custom AutoML model. 
 
 First, replace the 3 placeholder strings at the top of the file with  info for your own project and AutoML model:
 
