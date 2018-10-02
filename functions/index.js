@@ -30,8 +30,8 @@ const predictionClient = new automl.PredictionServiceClient();
 // Firebase libraries
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
+
 const db = admin.firestore();
-admin.initializeApp(functions.config().firebase);
 
 function resizeImg(filepath) {
     return new Promise((resolve, reject) => {
@@ -68,7 +68,7 @@ function callAutoMLAPI(b64img) {
                 reject(err);
             });
     });
-    
+
 }
 
 exports.callCustomModel = functions.storage.object().onFinalize(event => {
@@ -81,12 +81,12 @@ exports.callCustomModel = functions.storage.object().onFinalize(event => {
                 return resizeImg(destination);
             } else {
                 return destination;
-            }     
+            }
         })
         .then(() => {
             let bitmap = fs.readFileSync(destination);
             let data = new Buffer(bitmap).toString('base64');
-            return callAutoMLAPI(data);  
+            return callAutoMLAPI(data);
         })
         .then((response) => {
             let predictions = {};
